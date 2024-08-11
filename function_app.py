@@ -20,6 +20,6 @@ def autopushtesting(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
-             "This is a very bad day.",
+             "Hi bro.",
              status_code=200
         )
