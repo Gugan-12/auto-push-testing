@@ -8,9 +8,6 @@ import logging
 # Open your local backend folder on your computer.
 
 # Select all the files and subfolders inside it (not the folder itself).
-
-# Drag and drop them into the GitHub upload area.
-
 # GitHub will show all the files to be uploaded or replaced.
 
 # Existing files (like app.py, requirements.txt, etc.) will be overwritten automatically.
@@ -32,23 +29,12 @@ def autopushtesting(req: func.HttpRequest) -> func.HttpResponse:
         else:
             name = req_body.get('name')
 
-# On the top-right, click “Add file” → “Upload files”.
 
-# Open your local backend folder on your computer.
-
-# Select all the files and subfolders inside it (not the folder itself).
-
-# Drag and drop them into the GitHub upload area.
-
-# GitHub will show all the files to be uploaded or replaced.
-
-# Existing files (like app.py, requirements.txt, etc.) will be overwritten automatically.
-
-# Scroll down and in the Commit message, type:
     if name:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
              "Hi bro.",
              status_code=200
+
         )
